@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/components/Header.tsx", "src/components/Button.tsx"  ]
 }
