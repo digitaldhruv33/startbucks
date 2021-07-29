@@ -12,7 +12,7 @@ module.exports = {
         400: "#1e3932",
       },
       secondary: "#f3f1e7",
-      gold:"#cba258",
+      gold: "#cba258",
       grey: colors.gray,
       white: colors.white,
       black: colors.black,
@@ -20,6 +20,7 @@ module.exports = {
 
     fontFamily: {
       sans: "'Helvetica Neue',Helvetica,Arial,sans-serif",
+      mono: "'ui-monospace', 'SFMono-Regular'",
     },
 
     extend: {
@@ -35,7 +36,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio')
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

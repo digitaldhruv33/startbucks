@@ -1,16 +1,16 @@
 import React from "react";
 import { MdLocationOn } from "react-icons/md";
 import Button from "./Button";
+import NavButton from "./ui/NavbarMenuButton";
 
-interface Props {
-  
-}
+interface Props {}
 
 const Nav: React.FC<Props> = (props) => {
   return (
     <>
-      <div className=" flex px-10 py-6">
-        <div>
+      <div className=" flex box-border pl-10 h-24 justify-between  ">
+       <div className="flex">
+       <div className=" flex items-center">
           <svg
             className="w-12 h-12"
             xmlns="http://www.w3.org/2000/svg"
@@ -28,21 +28,25 @@ const Nav: React.FC<Props> = (props) => {
               <path d="M53.595 57.01h-1.526v4.105h-.547v-4.105h-1.522v-.51h3.595v.51zM54.236 56.5h.811l1.57 3.618h.011l1.574-3.618h.798v4.615h-.551v-3.869h-.012l-1.653 3.869h-.333l-1.659-3.869h-.011v3.869h-.545v-4.615z"></path>
             </g>
           </svg>
+        
         </div>
-        <div className="flex items-center ">
-          <div className=" flex justify-between items-center">
+        <div className=" flex  ml-8 ">
+            <NavButton ButtonLabel="Menu" url= "/menu"></NavButton>
+            <NavButton ButtonLabel="Rewards" url= "/rewards"></NavButton>
+            <NavButton ButtonLabel="Gift Card" url= "/gift-card"></NavButton>
 
-            <h2>Menu</h2> 
-            <h2>Rewards</h2>
-            <h2>Gift Card</h2>
+           
           </div>
+       </div>
 
-          <div className="flex items-center ">
-            <MdLocationOn></MdLocationOn>
-            <h2>Find a store</h2>
+        <div className="flex ">
+          <div className="flex items-center">
+            <div className="flex">
+              <MdLocationOn></MdLocationOn>
+              <h2>Find a store</h2>
+            </div>
+            <Button></Button>
           </div>
-
-          <Button ></Button>
         </div>
       </div>
     </>
